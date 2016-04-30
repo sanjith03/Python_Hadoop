@@ -7,6 +7,6 @@ hadoop jar /usr/lib/hadoop-mapreduce/hadoop-streaming.jar \
 -jobconf mapred.reduce.tasks=4 \
 -numReduceTasks 4 \
 -jobconf stream.num.map.output.key.fields=2 \
--jonconf mapreduce.partition.keypartitioner.options=-K1,2 \
+-jobconf mapreduce.partition.keypartitioner.options=-K1,2 \
 -partitioner org.apache.hadoop.mapred.lib.KeyFieldBasedPartitioner 
 
